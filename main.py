@@ -1,7 +1,12 @@
 import etlapmodul
+import rendeles
+import szamla
 etlap_hossz=60
+szamlahossz=30
 i = 0
 
+
+valasztasMasik=1
 levesek = ["1-Húsleves", "2-Gyümölcsleves"]
 levesAr = [1999, 1500]
 foetelek = ["1-Csirkepörkölt", "2-Mátrai borzaska"]
@@ -22,3 +27,11 @@ etlapmodul.kaja("*",foetelek[1],foetelAr[1],"Ft","*",etlap_hossz)
 etlapmodul.sor("*",etlap_hossz)
 etlapmodul.cim("*","Jó Étvágyat!","*",etlap_hossz)
 etlapmodul.sor("*",etlap_hossz)
+
+rendeles.leves(levesAr,foetelAr)
+rendeles.szamlaSor("*",szamlahossz)
+
+rendeles.szamlacim("*","Számla","*",szamlahossz)
+rendeles.szamlaSor("*",szamlahossz)
+rendeles.kertEtelekcim("*","Kért ételek: ","*",szamlahossz)
+rendeles.valasztottEtel("*",levesek[0],levesAr[0],"*")

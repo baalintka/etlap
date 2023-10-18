@@ -10,10 +10,12 @@ def kaja(jel,levesek,levesAr,penznem,jel2,etlap_hossz):
     hossz:int = int(etlap_hossz/4)
 
 
-    print(f"{jel}{levesek:<{hossz}}{levesAr:>{hossz*2}}{penznem:<{hossz-2}}{jel2}")
+    print(f"{jel:<8}{levesek:<20}{levesAr:>20}{penznem:<5}{jel2:>7}")
 
 def kaja2(jel,foetelek,foetelAr,penznem,jel2,etlap_hossz):
     hossz:int = int(etlap_hossz/4)
 
 
     print(f"{jel}{foetelek}{foetelAr:>{hossz*2}}{penznem:<{hossz-2}}{jel2}")
+
+
