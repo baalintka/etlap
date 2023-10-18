@@ -1,7 +1,7 @@
-
+import fomenu
 def leves(levesAr,foetelAr):
 
-    valasztas=0
+    global valasztas
     valasz = input("Kér levest? (I/N): ").lower()
     if valasz == "i":
         print("Levesek:")
@@ -42,6 +42,9 @@ def szamlacim(jel,szoveg,jel2,szamlahossz):
     print(f"{jel}{szoveg:^{hossz}}{jel2}")
 def kertEtelekcim(jel,szoveg,jel2,szamlahossz):
     print(f"{jel:<5}{szoveg}{jel2:>12}")
-def valasztottEtel(jel,szoveg,ar,jel2):
+def valasztottEtel(jel,szoveg,ar,jel2,valasztas):
     if valasztas==0:
+
+
         print(f"{jel:<5}{szoveg }{ar}{jel2:>12}")
+
