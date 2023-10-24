@@ -1,10 +1,11 @@
 import etlapmodul
 import rendeles
 import szamla
+nemkert:bool=False
 etlap_hossz=60
 szamlahossz=30
 i = 0
-
+valasztas=1
 
 valasztasMasik=1
 levesek = ["1-Húsleves", "2-Gyümölcsleves"]
@@ -28,10 +29,8 @@ etlapmodul.sor("*",etlap_hossz)
 etlapmodul.cim("*","Jó Étvágyat!","*",etlap_hossz)
 etlapmodul.sor("*",etlap_hossz)
 
-rendeles.leves(levesAr,foetelAr)
-rendeles.szamlaSor("*",szamlahossz)
+rendeles.leves(levesAr,foetelAr,nemkert)
 
-rendeles.szamlacim("*","Számla","*",szamlahossz)
-rendeles.szamlaSor("*",szamlahossz)
-rendeles.kertEtelekcim("*","Kért ételek: ","*",szamlahossz)
-rendeles.valasztottEtel("*",levesek[0],levesAr[0],"*")
+
+
+
