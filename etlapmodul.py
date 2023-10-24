@@ -29,4 +29,6 @@ def kertEtelekcim(jel,szoveg,jel2,szamlahossz):
 def valasztottetel(jel,szoveg,ar,penznem,jel2):
     print(f"{jel:<5}{szoveg }{ar}{penznem:<5}{jel2:>8}")
 def valasztottetel2(jel,szoveg,ar,penznem,jel2):
-    print(f"{jel:<5}{szoveg:<5}{ar:<5}{penznem:<5}{jel2:>2}")
+    print(f"{jel:<5}{szoveg:<9}{ar:<5}{penznem:<5}{jel2:>2}")
+def vegosszeg(jel,szoveg,osszeg,penznem,jel2):
+    print(f"{jel:<5}{szoveg}{osszeg}{penznem}{jel2:>4}")
