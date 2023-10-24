@@ -9,8 +9,6 @@ foetelek = ["Csirkepörkölt ", "Mátrai borzaska "]
 foetelAr = [2980, 4500]
 rendelt = []
 rendeltAr = []
-global LeValasztas
-global FoValasztas
 nemkert:bool=False
 def leves(levesAr,foetelAr,nemkert,osszeg):
 
@@ -24,11 +22,11 @@ def leves(levesAr,foetelAr,nemkert,osszeg):
             valasz1 = int(input("1 vagy 2?"))
         if valasz1 == 1:
 
-                LeValasztas=1
+
                 osszeg=levesAr[0]
-                print(LeValasztas,osszeg)
+
         elif valasz1==2:
-                LeValasztas=2
+
                 osszeg = levesAr[1]
 
         foetel(foetelAr,valasz1,nemkert,osszeg)
@@ -52,7 +50,6 @@ def foetel(foetelAr,valasz1,nemkert,osszeg):
             valasz = int(input("1 vagy 2? "))
         if valasz == 1:
                     osszeg += foetelAr[0]
-                    FoValasztas=1
                     print("hmm")
                     etlapmodul.szamlacim("*", "Számla", "*", szamlahossz)
                     etlapmodul.szamlaSor("*", szamlahossz)
@@ -66,7 +63,6 @@ def foetel(foetelAr,valasz1,nemkert,osszeg):
                     print("Köszönjük hogy nálunk rendelt!")
         elif valasz==2:
                     osszeg += foetelAr[1]
-                    FoValasztas=2
                     print("ehe")
                     etlapmodul.szamlacim("*", "Számla", "*", szamlahossz)
                     etlapmodul.szamlaSor("*", szamlahossz)
@@ -96,12 +92,11 @@ def foetel(foetelAr,valasz1,nemkert,osszeg):
 
 
 def desszert():
-    valasz = input("Kér desszertet? (I/N): ").lower()
-    if valasz == "i":
+    valaszd = input("Kér desszertet? (I/N): ").lower()
+    if valaszd == "i":
         print("desszertek:")
-        print("1-Csirkepörkölt\n2-Mátrai borzaska")
+        print("1-Karamlellás fagyi\n2-Macaron")
 
-        valasz = int(input("1 vagy 2? "))
-        while (valasz != 1) and (valasz != 2):
-            valasz = int(input("1 vagy 2? "))
-        if valasz == 1:
+        valaszd = int(input("1 vagy 2? "))
+        while (valaszd != 1) and (valaszd != 2):
+            valaszd = int(input("1 vagy 2? "))
