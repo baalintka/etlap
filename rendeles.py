@@ -3,7 +3,7 @@ penznem="Ft"
 etlap_hossz=60
 szamlahossz=30
 osszeg:int=0
-desszertek=["Karamlellás fagyi ", "Macaron "]
+desszertek=["Csokis fagyi ", "Macaron "]
 dAr=[850, 650]
 levesek = ["Húsleves ", "Gyümölcsleves "]
 levesAr = [1999, 1500]
@@ -46,12 +46,12 @@ def foetel(foetelAr,foetelek,nemkert):
         if valasz == 1:
             rendeltAr.append(foetelAr[0])
             rendelt.append(foetelek[0])
-            print(rendelt)
+
 
         elif valasz==2:
             rendeltAr.append(foetelAr[1])
             rendelt.append(foetelek[1])
-            print(rendelt)
+
         desszert(nemkert)
     if valasz =="n":
         desszert(nemkert)
@@ -59,7 +59,7 @@ def desszert(nemkert):
     valasztas = input("Kér desszertet? (I/N): ").lower()
     if valasztas == "i":
         print("desszertek:")
-        print("1-Karamlellás fagyi\n2-Macaron")
+        print("1-Csokis fagyi\n2-Macaron")
 
         valaszd = int(input("1 vagy 2? "))
         while (valaszd != 1) and (valaszd != 2):
@@ -67,23 +67,20 @@ def desszert(nemkert):
         if valaszd == 1:
             rendelt.append(desszertek[0])
             rendeltAr.append(dAr[0])
-            print("Ön faghyit kért")
             kiiras(rendelt)
         elif valaszd == 2:
             rendelt.append(desszertek[1])
             rendeltAr.append(dAr[1])
-            print("Ön macaront kért")
             kiiras(rendelt)
-    elif valasztas == "n" and nemkert==True:
+    elif valasztas == "n" and nemkert==False:
         print("Ön nem kér semmit!")
         exit()
-    elif valasztas == "n" and nemkert==False:
+    elif valasztas == "n" and nemkert==True:
         print("Nem kér desszertet")
         kiiras(rendelt)
 
 def kiiras(rendelt):
-
-
+    etlapmodul.szamlaSor("*", szamlahossz)
     etlapmodul.szamlacim("*", "Számla", "*", szamlahossz)
     etlapmodul.szamlaSor("*", szamlahossz)
     etlapmodul.kertEtelekcim("*", "Kért ételek: ", "*")
@@ -97,4 +94,7 @@ def kiiras(rendelt):
     while i <= len(rendeltAr)-1:
         osszear+=rendeltAr[i]
         i+=1
+    etlapmodul.szamlaSor("*", szamlahossz)
     etlapmodul.vegosszeg("*", "Fizetendő: ",osszear," Ft","*")
+    etlapmodul.szamlaSor("*", szamlahossz)
+

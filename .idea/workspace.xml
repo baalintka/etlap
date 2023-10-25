@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="972355b1-4f84-46f7-a011-1151ccf2c350" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fomenu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etlapmodul.py" beforeDir="false" afterPath="$PROJECT_DIR$/etlapmodul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fomenu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rendeles.py" beforeDir="false" afterPath="$PROJECT_DIR$/rendeles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szamla.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +32,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/balli/PycharmProjects/pythonProject/Szollosi_Balint_etlap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/balli/Desktop/suli2023/etlap/etlap"
   }
-}</component>
-  <component name="RunManager" selected="Python.fomenu">
+}]]></component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="etlapmodul" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Szollosi_Balint_etlap" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.fomenu" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.fomenu" />
         <item itemvalue="Python.rendeles" />
         <item itemvalue="Python.etlapmodul" />
       </list>
@@ -152,16 +154,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/szamla.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
