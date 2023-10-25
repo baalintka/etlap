@@ -7,6 +7,7 @@ szamlahossz=30
 i = 0
 osszeg=0
 valasztas=1
+valaszd=0
 
 valasztasMasik=1
 levesek = ["1-Húsleves", "2-Gyümölcsleves"]
@@ -30,7 +31,7 @@ etlapmodul.sor("*",etlap_hossz)
 etlapmodul.cim("*","Jó Étvágyat!","*",etlap_hossz)
 etlapmodul.sor("*",etlap_hossz)
 
-rendeles.leves(levesAr,foetelAr,nemkert,osszeg)
+rendeles.leves(levesAr,foetelAr,nemkert)
 
 
 
