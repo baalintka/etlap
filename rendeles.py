@@ -86,10 +86,15 @@ def kiiras(rendelt):
 
     etlapmodul.szamlacim("*", "Számla", "*", szamlahossz)
     etlapmodul.szamlaSor("*", szamlahossz)
-    etlapmodul.kertEtelekcim("*", "Kért ételek: ", "*", szamlahossz)
+    etlapmodul.kertEtelekcim("*", "Kért ételek: ", "*")
     i=0
-    while i< len(rendelt)-1:
-        etlapmodul.valasztottetel("*", rendelt[i], levesAr[i], "Ft", "*")
+    while i <= len(rendelt)-1:
         etlapmodul.valasztottetel2("*", rendelt[i], rendeltAr[i], "Ft", "*")
-        i+=1
 
+        i+=1
+    osszear=0
+    i=0
+    while i <= len(rendeltAr)-1:
+        osszear+=rendeltAr[i]
+        i+=1
+    etlapmodul.vegosszeg("*", "Fizetendő: ",osszear," Ft","*")

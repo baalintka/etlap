@@ -24,7 +24,7 @@ def szamlaSor(jel,db):
 def szamlacim(jel,szoveg,jel2,szamlahossz):
     hossz=szamlahossz-(len(jel)+len(jel2))
     print(f"{jel}{szoveg:^{hossz}}{jel2}")
-def kertEtelekcim(jel,szoveg,jel2,szamlahossz):
+def kertEtelekcim(jel,szoveg,jel2):
     print(f"{jel:<5}{szoveg}{jel2:>12}")
 def valasztottetel(jel,szoveg,ar,penznem,jel2):
     print(f"{jel:<5}{szoveg }{ar}{penznem:<5}{jel2:>8}")
