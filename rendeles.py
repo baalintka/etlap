@@ -24,14 +24,14 @@ def leves(levesAr,foetelAr,nemkert):
         if valasz1 == 1:
             rendeltAr.append(levesAr[0])
             rendelt.append(levesek[0])
-
+            nemkert = True
         elif valasz1==2:
             rendeltAr.append(levesAr[1])
             rendelt.append(levesek[1])
-
+            nemkert = True
         foetel(foetelAr,foetelek,nemkert)
     elif valasz1 =="n":
-        nemkert = True
+
         foetel(foetelAr,foetelek,nemkert)
 
     return nemkert
