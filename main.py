@@ -36,7 +36,9 @@ etlapmodul.sor("*",etlap_hossz)
 etlapmodul.cim("*","Jó Étvágyat!","*",etlap_hossz)
 etlapmodul.sor("*",etlap_hossz)
 
-rendeles.leves(levesAr,foetelAr,nemkert)
+rendeles.rendelles(levesek,"Kér levest? (I/N):",levesAr,"levest")
+rendeles.rendelles(foetelek,"Kér főételt? (I/N):",foetelAr,"főételt")
+rendeles.rendelles(desszertek,"Kér desszertet? (I/N):",dAr,"desszertet")
 
 
 
