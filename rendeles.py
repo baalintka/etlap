@@ -20,29 +20,30 @@ def rendelles(lista,kerdes,lista2,aktual):
     if valasz1 == "i":
         for i in range(2):
             etlapmodul.kaja("*",lista[i],lista2[i],penznem,"*")
-        valasz1 = int(input(f"Melyik {aktual} kéri? 1/2"))
-        while not(valasz1>=1 and valasz1<=len(lista)-1):
-            valasz1 = int(input(f"Melyik {aktual} kéri? 1/2..."))
-        rendeltAr.append(lista[valasz1-1])
-        rendelt.append(lista2[valasz1-1])
+        valasz = int(input(f"Melyik {aktual} kéri? 1/2"))
+        while not(valasz1>=1 and valasz1<=len(lista)):
+            valasz = int(input(f"Melyik {aktual} kéri? 1/2..."))
+        rendeltAr.append(lista[valasz-1])
+        rendelt.append(lista2[valasz-1])
 
     elif valasz1 =="n":
         print(f"Nem kért {aktual}")
 
-
-
-def kiiras(rendelt):
+    return valasz
+valasztott1=rendelles(levesek,"Kér levest? (I/N):",levesAr,"levest")
+valasztott2=rendelles(foetelek,"Kér főételt? (I/N):",foetelAr,"főételt")
+valasztott3=rendelles(desszertek,"Kér desszertet? (I/N):",dAr,"desszertet")
+def kiiras(rendelt,rendeltAr):
     etlapmodul.szamlaSor("*", szamlahossz)
     etlapmodul.szamlacim("*", "Számla", "*", szamlahossz)
     etlapmodul.szamlaSor("*", szamlahossz)
     etlapmodul.kertEtelekcim("*", "Kért ételek: ", "*")
-    i=0
-    while i <= len(rendelt)-1:
-        etlapmodul.valasztottetel2("*", rendelt[i], rendeltAr[i], "Ft", "*")
 
-        i+=1
-    osszear=0
+    etlapmodul.valasztottetel2("*", rendelt[valasztott1], rendeltAr[valasztott1], "Ft", "*")
+    etlapmodul.valasztottetel2("*", rendelt[valasztott1], rendeltAr[valasztott1], "Ft", "*")
+    etlapmodul.valasztottetel2("*", rendelt[valasztott1], rendeltAr[valasztott1], "Ft", "*")
     i=0
+    osszear=0
     while i <= len(rendeltAr)-1:
         osszear+=rendeltAr[i]
         i+=1

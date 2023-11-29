@@ -39,7 +39,7 @@ etlapmodul.sor("*",etlap_hossz)
 rendeles.rendelles(levesek,"Kér levest? (I/N):",levesAr,"levest")
 rendeles.rendelles(foetelek,"Kér főételt? (I/N):",foetelAr,"főételt")
 rendeles.rendelles(desszertek,"Kér desszertet? (I/N):",dAr,"desszertet")
-
+rendeles.kiiras(rendelt,rendeltAr)
 
 
 
