@@ -40,8 +40,8 @@ def kiiras(rendelt,rendeltAr):
     etlapmodul.kertEtelekcim("*", "Kért ételek: ", "*")
 
     etlapmodul.valasztottetel2("*", rendelt[valasztott1], rendeltAr[valasztott1], "Ft", "*")
-    etlapmodul.valasztottetel2("*", rendelt[valasztott1], rendeltAr[valasztott1], "Ft", "*")
-    etlapmodul.valasztottetel2("*", rendelt[valasztott1], rendeltAr[valasztott1], "Ft", "*")
+    etlapmodul.valasztottetel2("*", rendelt[valasztott2], rendeltAr[valasztott2], "Ft", "*")
+    etlapmodul.valasztottetel2("*", rendelt[valasztott3], rendeltAr[valasztott3], "Ft", "*")
     i=0
     osszear=0
     while i <= len(rendeltAr)-1:
