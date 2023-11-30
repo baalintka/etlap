@@ -1,7 +1,5 @@
 def sor(jel,db):
     print(jel*db)
-
-import rendeles
 def cim (jel,szoveg,jel2,etlap_hossz):
     hossz=etlap_hossz-(len(jel)+len(jel2))
     print(f"{jel}{szoveg:^{hossz}}{jel2}")

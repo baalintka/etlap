@@ -12,16 +12,14 @@ foetelAr = [2980, 4500]
 rendelt = []
 rendeltAr = []
 
-
-
-
 def rendelles(lista,kerdes,lista2,aktual):
     valasz1 = input(kerdes).lower()
+    valasz:int=0
     if valasz1 == "i":
         for i in range(2):
             etlapmodul.kaja("*",lista[i],lista2[i],penznem,"*")
         valasz = int(input(f"Melyik {aktual} kéri? 1/2"))
-        while not(valasz1>=1 and valasz1<=len(lista)):
+        while not(valasz>=1 and valasz<=len(lista)):
             valasz = int(input(f"Melyik {aktual} kéri? 1/2..."))
         rendeltAr.append(lista[valasz-1])
         rendelt.append(lista2[valasz-1])
@@ -30,6 +28,7 @@ def rendelles(lista,kerdes,lista2,aktual):
         print(f"Nem kért {aktual}")
 
     return valasz
+
 valasztott1=rendelles(levesek,"Kér levest? (I/N):",levesAr,"levest")
 valasztott2=rendelles(foetelek,"Kér főételt? (I/N):",foetelAr,"főételt")
 valasztott3=rendelles(desszertek,"Kér desszertet? (I/N):",dAr,"desszertet")
